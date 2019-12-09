@@ -4,6 +4,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C5185105-3F4
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectManagementSystem.Xamarin.iOSApp", "src\ProjectManagementSystem.Xamarin.iOSApp\ProjectManagementSystem.Xamarin.iOSApp.csproj", "{F5335F45-800F-4F69-8785-3B800DC864D4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectManagementSystem.Xamarin.Domain", "src\ProjectManagementSystem.Xamarin.Domain\ProjectManagementSystem.Xamarin.Domain.csproj", "{67087F1E-C24F-4156-B65C-6F7266898CCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectManagementSystem.Xamarin.Infrastructure", "src\ProjectManagementSystem.Xamarin.Infrastructure\ProjectManagementSystem.Xamarin.Infrastructure.csproj", "{FBDBF210-B772-4147-AC59-64E1C22C9789}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -11,11 +15,21 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F5335F45-800F-4F69-8785-3B800DC864D4} = {C5185105-3F4B-4DA2-BE9F-D4F825A93A96}
+		{67087F1E-C24F-4156-B65C-6F7266898CCC} = {C5185105-3F4B-4DA2-BE9F-D4F825A93A96}
+		{FBDBF210-B772-4147-AC59-64E1C22C9789} = {C5185105-3F4B-4DA2-BE9F-D4F825A93A96}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{F5335F45-800F-4F69-8785-3B800DC864D4}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
 		{F5335F45-800F-4F69-8785-3B800DC864D4}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
 		{F5335F45-800F-4F69-8785-3B800DC864D4}.Release|Any CPU.ActiveCfg = Release|iPhoneSimulator
 		{F5335F45-800F-4F69-8785-3B800DC864D4}.Release|Any CPU.Build.0 = Release|iPhoneSimulator
+		{67087F1E-C24F-4156-B65C-6F7266898CCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67087F1E-C24F-4156-B65C-6F7266898CCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67087F1E-C24F-4156-B65C-6F7266898CCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67087F1E-C24F-4156-B65C-6F7266898CCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBDBF210-B772-4147-AC59-64E1C22C9789}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBDBF210-B772-4147-AC59-64E1C22C9789}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBDBF210-B772-4147-AC59-64E1C22C9789}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBDBF210-B772-4147-AC59-64E1C22C9789}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
