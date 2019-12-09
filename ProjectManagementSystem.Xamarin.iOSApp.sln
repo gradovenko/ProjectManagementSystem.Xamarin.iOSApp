@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C5185105-3F4B-4DA2-BE9F-D4F825A93A96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectManagementSystem.Xamarin.iOSApp", "src\ProjectManagementSystem.Xamarin.iOSApp\ProjectManagementSystem.Xamarin.iOSApp.csproj", "{F5335F45-800F-4F69-8785-3B800DC864D4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F5335F45-800F-4F69-8785-3B800DC864D4} = {C5185105-3F4B-4DA2-BE9F-D4F825A93A96}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5335F45-800F-4F69-8785-3B800DC864D4}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
+		{F5335F45-800F-4F69-8785-3B800DC864D4}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
+		{F5335F45-800F-4F69-8785-3B800DC864D4}.Release|Any CPU.ActiveCfg = Release|iPhoneSimulator
+		{F5335F45-800F-4F69-8785-3B800DC864D4}.Release|Any CPU.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+EndGlobal
