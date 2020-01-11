@@ -4,4 +4,12 @@
         <TargetFramework>netstandard2.1</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\ProjectManagementSystem.Xamarin.Domain\ProjectManagementSystem.Xamarin.Domain.csproj" />
+    </ItemGroup>
+    <ItemGroup>
+      <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+      <PackageReference Include="System.Text.Json" Version="4.7.0" />
+      <PackageReference Include="refit" Version="5.0.23" />
+    </ItemGroup>
 </Project>

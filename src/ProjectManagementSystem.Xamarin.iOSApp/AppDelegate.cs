@@ -1,4 +1,11 @@
-﻿using Foundation;
+﻿using System;
+using Foundation;
+using Microsoft.Extensions.DependencyInjection;
+using ProjectManagementSystem.Xamarin.Domain.Authentication;
+using ProjectManagementSystem.Xamarin.Infrastructure.Authentication;
+using ProjectManagementSystem.Xamarin.Infrastructure.AuthenticationApi;
+using ProjectManagementSystem.Xamarin.Infrastructure.TokenStores;
+using Refit;
 using UIKit;
 
 namespace ProjectManagementSystem.Xamarin.iOSApp
@@ -8,6 +15,8 @@ namespace ProjectManagementSystem.Xamarin.iOSApp
     [Register("AppDelegate")]
     public class AppDelegate : UIResponder, IUIApplicationDelegate
     {
+        private static ServiceProvider _serviceProvider;
+        public static IServiceProvider ServiceProvider => _serviceProvider;
 
         [Export("window")]
         public UIWindow Window { get; set; }
@@ -15,9 +24,24 @@ namespace ProjectManagementSystem.Xamarin.iOSApp
         [Export("application:didFinishLaunchingWithOptions:")]
         public bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
         {
+            var serviceCollection = new ServiceCollection();
+            ConfigureServices(serviceCollection);
+            _serviceProvider = serviceCollection.BuildServiceProvider();
+
             // Override point for customization after application launch.
             // If not required for your application you can safely delete this method
             return true;
+        }
+
+        private static void ConfigureServices(IServiceCollection serviceCollection)
+        {
+            #region Authentication
+
+            serviceCollection.AddScoped(sp => RestService.For<IAuthenticationApi>("http://85.192.132.112:57264"));
+            serviceCollection.AddSingleton<TokenStore>();
+            serviceCollection.AddScoped<IAuthenticationService, AuthenticationService>();
+
+            #endregion
         }
 
         // UISceneSession Lifecycle
